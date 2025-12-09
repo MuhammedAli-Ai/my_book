@@ -1,0 +1,60 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* Robotics / Physical AI Theme */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  /* Core Brand Colors - Deep Blue & Electric Cyan */
+  --ifm-color-primary: #0066cc;
+  --ifm-color-primary-dark: #005bb7;
+  --ifm-color-primary-darker: #0056ad;
+  --ifm-color-primary-darkest: #00478f;
+  --ifm-color-primary-light: #2684e0;
+  --ifm-color-primary-lighter: #3992e6;
+  --ifm-color-primary-lightest: #70bdfc;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  --ifm-code-font-size: 90%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+
+  /* Navbar */
+  --ifm-navbar-background-color: #f8f9fa;
+  --ifm-navbar-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Dark Mode - Sci-Fi Robotics Vibe */
+[data-theme='dark'] {
+  --ifm-color-primary: #29d5b0; /* Cyber Cyan */
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #4fddbf;
+  --ifm-color-primary-lighter: #63e2c6;
+  --ifm-color-primary-lightest: #8cf2dc;
+
+  --ifm-background-color: #0b0d11; /* Deep Space Black */
+  --ifm-background-surface-color: #151921;
+
+  --ifm-navbar-background-color: #151921;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.05);
+}
+
+/* Enhancements */
+.hero {
+  background: linear-gradient(135deg, var(--ifm-color-primary-darkest), var(--ifm-color-primary));
+  color: white;
+}
+
+[data-theme='dark'] .hero {
+  background: linear-gradient(135deg, #0f1115, #1d232f);
+}
+
+.button--primary {
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
